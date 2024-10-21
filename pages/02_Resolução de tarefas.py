@@ -161,7 +161,7 @@ total_compradores = leads_df['comprador'].sum()
 
 sf.text_left(f"Total de leads:{total_leads}", 5, "white")
 sf.text_left(f"Total de compradores:{total_compradores}", 5, "white")
-sf.text_left(f"Conversão: {conversion_rate}", 5, "white")
+sf.text_left(f"Conversão: {(conversion_rate*100):.2f}%", 5, "white")
 
 
 
