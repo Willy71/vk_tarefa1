@@ -3,7 +3,7 @@ import st_format as sf
 import pandas as pd
 
 
-sf.text_left("Para montar um estudo com base nos dados fornecidos, podemos estruturar a análise em três grandes etapas:", 4, "white")
+sf.text_left("Para montar um estudo com base nos dados fornecidos, vou estruturar o análise em três grandes etapas:", 4, "white")
 
 sf.text_left("Análise de Inscrição e Captação de Leads:", 4, "yellow")
 sf.text_left("Avaliação dos leads inscritos por meio da primeira tabela ('001_TabelaPesquisaUTMsn.csv'), com destaque para os canais de origem (source), tipo de tráfego (medium) e anúncios (term) que mais geraram leads.", 6, "lightgrey")
@@ -12,7 +12,7 @@ sf.text_left("Análise de Conversão de Leads para Compradores:", 4, "yellow")
 sf.text_left("Cruzamento dos dados de leads com os compradores da segunda tabela ('002_TabelaVendas.csv') para identificar taxas de conversão por canal, tráfego e anúncio. Isso pode indicar quais estratégias geraram mais vendas.", 6, "lightgrey")
 
 sf.text_left("Perfil dos Leads e Compradores:", 4, "yellow")
-sf.text_left("Com base na pesquisa de persona (terceira tabela, '003_TabelaPesquisa.csv'), analisaremos o perfil dos leads que responderam a pesquisa, verificando idade, renda e há quanto tempo conhecem o expert. Cruzar esses dados com os compradores também pode fornecer insights sobre o perfil dos clientes que compraram.", 6, "lightgrey")
+sf.text_left("Com base na pesquisa de persona (terceira tabela, '003_TabelaPesquisa.csv'), analisare o perfil dos leads que responderam a pesquisa, verificando idade, renda e há quanto tempo conhecem o expert. Cruzar esses dados com os compradores também pode fornecer insights sobre o perfil dos clientes que compraram.", 6, "lightgrey")
 
 sf.text_left("Passos:", 4, "yellow")
 with st.container():
@@ -127,7 +127,7 @@ with st.container():
   col17, col18 = st.columns([0.5,6]) 
   with col18:
     st.markdown("Identificar quais leads da tabela de inscritos (leads_df) realizaram compras, cruzando com a tabela de vendas (vendas_df).")
-    st.markdown("Analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
+    st.markdown("Vou analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
 st.text("")
 
 sf.text_left("Vou realizar a análise de conversão de leads para compradores.", 4, "white")
@@ -165,7 +165,7 @@ sf.text_left(f"Conversão:\t\t\t{(conversion_rate*100):.2f}%", 5, "white")
 
 st.text("")
 
-sf.text_left("Agora, vamos detalhar a análise por canal de origem (utmsource), público (utmmedium), e anúncio (utmterm) para identificar quais estratégias de marketing trouxeram mais compradores.", 4, "white")
+sf.text_left("Agora, vou detalhar a análise por canal de origem (utmsource), público (utmmedium), e anúncio (utmterm) para identificar quais estratégias de marketing trouxeram mais compradores.", 4, "white")
 
 code_03 = '''
 # Analisar a taxa de conversão por canal (utmsource), público (utmmedium) e anúncio (utmterm)
@@ -239,7 +239,7 @@ with st.container():
 sf.line(5, "blue")
 sf.text_left("Próximos passos:", 4, "yellow")
 st.text("")
-sf.text_left("Agora, podemos cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações.", 4, "lightgrey")
+sf.text_left("Agora, vou cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações.", 4, "lightgrey")
 
 code_04 = '''
 # Cruzar os dados de pesquisa com os dados de leads (incluindo informação de compradores)
