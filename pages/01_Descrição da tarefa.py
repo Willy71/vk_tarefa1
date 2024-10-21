@@ -22,3 +22,5 @@ st.text("")
 sf.text_left("Segue a descrição e link para as tabelas.", 4, "white")
 sf.text_left("A primeira tabela de dados traz dados de leads inscritos em um lançamento, ou seja, dados de quem se inscreveu para participar de um lançamento.", 4, "white")
 sf.text_left("Na tabela há o e-mail do lead e os parâmetros de UTM de entrada desse lead. Dica: UTMs são parâmetros que indicam a origem do lead, nesse caso, Source representa o canal de origem, Medium (para canais de tráfego pago) representa o público e Term (para canais de tráfego pago) o anúncio que trouxe o lead.", 4, "white")
+
+sf.left_text_link("001_TabelaPesquisaUTMsn.csv", "https://drive.google.com/file/d/1volT93MoYgn6MvC5UzWwEN3fLQIoFLsB/view?usp=sharing", 5, color):
