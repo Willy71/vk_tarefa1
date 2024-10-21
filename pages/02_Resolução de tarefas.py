@@ -84,7 +84,7 @@ with st.container():
         st.markdown("utmmedium: Público do tráfego pago (ex: 'lookalike_1_compras_180D').")
         st.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
 
-sf.text_left("Tabela de Vendas (Compradores):", 4, "yellow")
+sf.text_left("2 - Tabela de Vendas (Compradores):", 4, "yellow")
 with st.container():
   col09, col10 = st.columns([0.5,6]) 
   with col10:
@@ -96,7 +96,7 @@ with st.container():
 
 
 
-sf.text_left("Tabela de Pesquisa (Perfil de Leads):", 4, "yellow")
+sf.text_left("3 - Tabela de Pesquisa (Perfil de Leads):", 4, "yellow")
 with st.container():
   col13, col14 = st.columns([0.5,6]) 
   with col14:
@@ -109,7 +109,7 @@ with st.container():
         st.markdown("renda: Faixa de renda do lead.")
         st.markdown("tempo_me_conhece: Tempo que o lead conhece o expert.")
 
-sf.text_left("Tabela de Qualidade:", 4, "yellow")
+sf.text_left("4 - Tabela de Qualidade:", 4, "yellow")
 with st.container():
   col13, col14 = st.columns([0.5,6]) 
   with col14:
@@ -120,6 +120,7 @@ with st.container():
         st.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
         st.markdown("instagram_permalink_url: Anúncio de instagram")
 
+sf.line(5, "blue")
 
 sf.text_left("Próximos passos:", 4, "yellow")
 with st.container():
