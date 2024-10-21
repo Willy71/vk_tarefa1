@@ -128,7 +128,9 @@ with st.container():
   with col18:
     st.markdown("Identificar quais leads da tabela de inscritos (leads_df) realizaram compras, cruzando com a tabela de vendas (vendas_df).")
     st.markdown("Analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
-    st.markdown("Vou realizar a análise de conversão de leads para compradores.")
+st.text("")
+
+sf.text_left("Vou realizar a análise de conversão de leads para compradores.", 4, "yellow")
 
 
 
