@@ -79,25 +79,27 @@ df_source = pd.DataFrame(data_source)
 df_medium = pd.DataFrame(data_medium)
 df_term = pd.DataFrame(data_term)
 
+sf.line(5, "blue")
+
 # Título no Streamlit
-st.title('Análise de Conversão por Canal, Público e Anúncio')
+sf.center_text('Análise de Conversão por Canal, Público e Anúncio', 4, "white")
 
 # Gráfico 1 - Conversão por Canal de Origem (utmsource)
-st.subheader('Conversão por Canal de Origem (utmsource)')
+sf.center_text('Conversão por Canal de Origem (utmsource)', 4, "yellow")
 fig_source = px.bar(df_source, x='utmsource', y='conversion_rate', 
                     text='conversion_rate', title="Taxa de Conversão por Canal de Origem",
                     labels={'conversion_rate':'Taxa de Conversão', 'utmsource':'Canal de Origem'})
 st.plotly_chart(fig_source)
 
 # Gráfico 2 - Conversão por Público (utmmedium)
-st.subheader('Conversão por Público (utmmedium)')
+sf.center_text('Conversão por Público (utmmedium)', 4, "yellow")
 fig_medium = px.bar(df_medium, x='utmmedium', y='conversion_rate', 
                     text='conversion_rate', title="Taxa de Conversão por Público",
                     labels={'conversion_rate':'Taxa de Conversão', 'utmmedium':'Público'})
 st.plotly_chart(fig_medium)
 
 # Gráfico 3 - Conversão por Anúncio (utmterm)
-st.subheader('Conversão por Anúncio (utmterm)')
+sf.center_text('Conversão por Anúncio (utmterm)', 4, "yellow")
 fig_term = px.bar(df_term, x='utmterm', y='conversion_rate', 
                   text='conversion_rate', title="Taxa de Conversão por Anúncio",
                   labels={'conversion_rate':'Taxa de Conversão', 'utmterm':'Anúncio'})
