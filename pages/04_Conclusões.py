@@ -51,7 +51,7 @@ sf.text_left("### 3. **Análise de Conversão por Anúncio (UTM Term)**", 4, "wh
 sf.text_left("Na análise por anúncio (UTM Term):", 4, "white") 
 
 st.markdown("- O anúncio 'youtube' converteu 100% dos leads.")
-st.markdown("- O anúncio "VD_54" teve uma conversão de **16.67%**, enquanto outros anúncios, como 'VD_51' e 'AD51', tiveram conversões de **10%**.")
+st.markdown("- O anúncio 'VD_54' teve uma conversão de **16.67%**, enquanto outros anúncios, como 'VD_51' e 'AD51', tiveram conversões de **10%**.")
 
 sf.text_left("**Conclusão**: O anúncio 'VD_54' foi o mais eficaz, seguido pelos demais com conversões notáveis. Isso indica que os anúncios focados no formato de vídeo podem ser mais impactantes, sugerindo que a criação de mais vídeos ou ajustes no formato de anúncios pode ser uma ótima estratégia para futuros lançamentos.", 4, "white") 
 
