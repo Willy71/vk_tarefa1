@@ -49,10 +49,10 @@ qualidade_df = pd.read_csv(path_qualidade)
 ")
 '''
 st.code(code_01, language="python")
-path_leads = '/data/001_TabelaPesquisaUTMsn.csv'
-path_vendas = '/data/002_TabelaVendas.csv'
-path_pesquisa = '/data/003_TabelaPesquisa.csv'
-path_qualidade = '/data/004_TabelaAdsLinks.csv'
+path_leads = 'data/001_TabelaPesquisaUTMsn.csv'
+path_vendas = 'data/002_TabelaVendas.csv'
+path_pesquisa = 'data/003_TabelaPesquisa.csv'
+path_qualidade = 'data/004_TabelaAdsLinks.csv'
 
 leads_df = pd.read_csv(path_leads)
 vendas_df = pd.read_csv(path_vendas)
