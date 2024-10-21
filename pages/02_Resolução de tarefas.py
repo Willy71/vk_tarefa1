@@ -62,9 +62,9 @@ qualidade_df = pd.read_csv(path_qualidade)
 # Obtener el nombre de la primera columna
 
 st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
-st.dataframe(vendas_df.head(), hide_index=True)
-st.dataframe(pesquisa_df.head(), hide_index=True)
-st.dataframe(pesquisa_df.head(), hide_index=True)
+st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
+st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
+st.dataframe(pesquisa_df.head(), hide_index=True, column_config={qualidade_df.columns[0] : None})
 
 
 
