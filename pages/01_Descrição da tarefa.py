@@ -1,6 +1,12 @@
 import streamlit as st
 import st_format as sf
 
+sf.line(5, "blue")
+sf.center_text("Descrição da tarefa", 3, "white")
+sf.line(5, "blue")
+
+st.text("")
+
 sf.text_left("Nossa ideia é te inserir num ambiente prático que você viverá e te dar liberdade para fazer o melhor que você que conseguir, independente do que for.", 4, "white")
 
 st.text("")
