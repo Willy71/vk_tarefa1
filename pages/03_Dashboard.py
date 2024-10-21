@@ -1,4 +1,5 @@
 import streamlit as st
+import st_format as sf
 import plotly.graph_objects as go
 
 st.set_page_config(
@@ -26,7 +27,7 @@ compradores = 71
 conversao = (compradores / leads) * 100
 
 # Título do app no Streamlit
-st.title('Análise de Conversão de Leads')
+sf.center_text('Análise de Conversão de Leads', 2, "white")
 
 # Definindo as etapas do funil
 etapas = ['Total de Leads', 'Total de Compradores', 'Conversão (%)']
@@ -44,5 +45,5 @@ fig = go.Figure(go.Funnel(
 st.plotly_chart(fig)
 
 # Exibindo a taxa de conversão calculada
-st.subheader(f"Taxa de Conversão: {round(conversao, 2)}%")
+sf.text_left(f"Taxa de Conversão: {round(conversao, 2)}%", 4, "white")
 
