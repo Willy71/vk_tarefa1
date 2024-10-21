@@ -24,17 +24,16 @@ sf.line(5, "blue")
 sf.center_text("Conclusões", 1, "white")  
 sf.line(5, "blue")
 
-sf.text_left("Para realizar uma análise aprofundada com os dados fornecidos, é necessário entender o cenário do lançamento a partir de diferentes perspectivas: a origem dos leads, o perfil dos compradores, e os fatores que influenciaram as conversões. A partir disso, poderemos gerar insights acionáveis e oferecer recomendações práticas. Vamos estruturar a análise em etapas:", 4, "white") 
-
 ### 1. **Análise de Conversão por Canal de Origem (UTM Source)**
 
-sf.text_left("Ao analisar os dados de conversão por canal de origem (UTM Source), observamos:", 4, "white") 
+sf.text_left("1 - Ao analisar os dados de conversão por canal de origem (UTM Source), observamos:", 4, "yellow") 
 
-st.markdown("- **YouTube** teve uma taxa de conversão de **100%** (1 lead, 1 comprador), mas isso é um valor muito pequeno para tirar conclusões concretas.")
-st.markdown("- **Manychat** foi o canal com maior volume de leads (599 leads), resultando em 13 compradores e uma taxa de conversão de **2.17%**.")
-st.markdown("- **STORIES** teve uma taxa de conversão de **1.61%** com 248 leads e 4 compradores.")
-  
-sf.text_left("**Conclusão**: Apesar de a taxa de conversão do YouTube ser a mais alta, o volume de leads é extremamente pequeno. Manychat, com uma maior quantidade de leads, se destacou com uma conversão acima da média. Esse é um canal que poderia receber mais investimento e melhorias em futuras campanhas, possivelmente ajustando a segmentação ou o conteúdo para aumentar ainda mais as conversões.", 4, "white") 
+sf.text_left("- **YouTube** teve uma taxa de conversão de **100%** (1 lead, 1 comprador), mas isso é um valor muito pequeno para tirar conclusões concretas.", 5, "white") 
+sf.text_left("- **Manychat** foi o canal com maior volume de leads (599 leads), resultando em 13 compradores e uma taxa de conversão de **2.17%**.", 5, "white") 
+sf.text_left("- **STORIES** teve uma taxa de conversão de **1.61%** com 248 leads e 4 compradores.", 5, "white") 
+st.text("")
+sf.text_left("-**Conclusão**:", 4, "yellow")  
+sf.text_left("Apesar de a taxa de conversão do YouTube ser a mais alta, o volume de leads é extremamente pequeno. Manychat, com uma maior quantidade de leads, se destacou com uma conversão acima da média. Esse é um canal que poderia receber mais investimento e melhorias em futuras campanhas, possivelmente ajustando a segmentação ou o conteúdo para aumentar ainda mais as conversões.", 5, "white") 
 
 ### 2. **Análise de Conversão por Público (UTM Medium)**
 
