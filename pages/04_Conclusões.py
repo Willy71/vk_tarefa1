@@ -21,7 +21,7 @@ reduce_space ="""
 st.html(reduce_space)
 
 sf.line(5, "blue")
-sf.center_text("Conclusões", 1, "white")  
+sf.center_text("Conclusões", 1, "white") 
 sf.line(5, "blue")
 
 sf.text_left("1. Análise de Conversão por Canal de Origem (UTM Source)", 3, "yellow") 
