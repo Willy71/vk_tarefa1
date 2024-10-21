@@ -87,21 +87,21 @@ sf.center_text('Análise de Conversão por Canal, Público e Anúncio', 2, "whit
 # Gráfico 1 - Conversão por Canal de Origem (utmsource)
 sf.center_text('Conversão por Canal de Origem (utmsource)', 3, "yellow")
 fig_source = px.bar(df_source, x='utmsource', y='conversion_rate', 
-                    text='conversion_rate', title="Taxa de Conversão por Canal de Origem",
+                    text='conversion_rate',
                     labels={'conversion_rate':'Taxa de Conversão', 'utmsource':'Canal de Origem'})
 st.plotly_chart(fig_source)
 
 # Gráfico 2 - Conversão por Público (utmmedium)
 sf.center_text('Conversão por Público (utmmedium)', 3, "yellow")
 fig_medium = px.bar(df_medium, x='utmmedium', y='conversion_rate', 
-                    text='conversion_rate', title="Taxa de Conversão por Público",
+                    text='conversion_rate',
                     labels={'conversion_rate':'Taxa de Conversão', 'utmmedium':'Público'})
 st.plotly_chart(fig_medium)
 
 # Gráfico 3 - Conversão por Anúncio (utmterm)
 sf.center_text('Conversão por Anúncio (utmterm)', 3, "yellow")
 fig_term = px.bar(df_term, x='utmterm', y='conversion_rate', 
-                  text='conversion_rate', title="Taxa de Conversão por Anúncio",
+                  text='conversion_rate',
                   labels={'conversion_rate':'Taxa de Conversão', 'utmterm':'Anúncio'})
 st.plotly_chart(fig_term)
 
