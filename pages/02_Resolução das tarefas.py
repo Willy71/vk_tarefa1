@@ -3,7 +3,7 @@ import st_format as sf
 import pandas as pd
 
 st.set_page_config(
-    page_title="VK Digital - Resolução de tarefas",
+    page_title="VK Digital - Resolução das tarefas",
     page_icon="🌌",
     layout="wide"
 )
