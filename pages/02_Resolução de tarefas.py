@@ -49,20 +49,4 @@ qualidade_df = pd.read_csv(path_qualidade)
 ")
 '''
 st.code(code_01, language="python")
-st.write(import pandas as pd
 
-# Carregar as três tabelas de dados
-path_leads = '/data/001_TabelaPesquisaUTMsn.csv'
-path_vendas = '/data/002_TabelaVendas.csv'
-path_pesquisa = '/data/003_TabelaPesquisa.csv'
-path_qualidade = '/data/004_TabelaAdsLinks.csv'
-
-# Lendo os arquivos CSV
-leads_df = pd.read_csv(path_leads)
-vendas_df = pd.read_csv(path_vendas)
-pesquisa_df = pd.read_csv(path_pesquisa)
-qualidade_df = pd.read_csv(path_qualidade)
-
-# Exibir as primeiras linhas de cada tabela para revisão
-(leads_df.head(), vendas_df.head(), pesquisa_df.head(), qualidade_df.head())
-"))
