@@ -133,11 +133,11 @@ data = {
 
 df = pd.DataFrame(data)
 
+sf.center_text('Distribuição de Compradores por Idade, Renda e Tempo que Conhecem o Expert', 3, "yellow")
 # Gráfico de Barras Empilhadas (Idade x Renda x Tempo)
 fig = px.bar(df, x="idade", y="count", color="renda", barmode="stack", 
              hover_data=["tempo_me_conhece"],
-             labels={"count": "Número de Compradores", "idade": "Faixa Etária", "renda": "Renda"},
-             title="Distribuição de Compradores por Idade, Renda e Tempo que Conhecem o Expert")
+             labels={"count": "Número de Compradores", "idade": "Faixa Etária", "renda": "Renda"})
 
 # Exibir o gráfico no Streamlit
 st.plotly_chart(fig)
@@ -154,8 +154,10 @@ fig_heatmap = go.Figure(data=go.Heatmap(
     y=heatmap_data.index,
     colorscale='Viridis'))
 
+sf.center_text('Heatmap de Compradores por Idade e Renda', 3, "yellow")
+
 fig_heatmap.update_layout(
-    title='Heatmap de Compradores por Idade e Renda',
+    title='',
     xaxis_nticks=36
 )
 
