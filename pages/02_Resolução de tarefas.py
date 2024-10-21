@@ -202,9 +202,7 @@ conversion_by_term = leads_df.groupby('utmterm')['comprador'].agg(['count', 'sum
 conversion_by_term.columns = ['utmterm', 'total_leads', 'total_compradores', 'conversion_rate']
 
 st.write(conversion_by_source.sort_values(by='conversion_rate', ascending=False).head())
-
 st.write(conversion_by_medium.sort_values(by='conversion_rate', ascending=False).head())
-
 st.write(conversion_by_term.sort_values(by='conversion_rate', ascending=False).head())
 
 
