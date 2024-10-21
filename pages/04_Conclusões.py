@@ -21,7 +21,7 @@ reduce_space ="""
 st.html(reduce_space)
 
 sf.line(5, "blue")
-sf.center_text("Conclusões", 1, "white")
+sf.center_text("Conclusões", 1, "white")  
 sf.line(5, "blue")
 
 sf.text_left("Para realizar uma análise aprofundada com os dados fornecidos, é necessário entender o cenário do lançamento a partir de diferentes perspectivas: a origem dos leads, o perfil dos compradores, e os fatores que influenciaram as conversões. A partir disso, poderemos gerar insights acionáveis e oferecer recomendações práticas. Vamos estruturar a análise em etapas:", 4, "white") 
