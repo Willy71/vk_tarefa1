@@ -44,7 +44,7 @@ pesquisa_df = pd.read_csv(path_pesquisa)
 qualidade_df = pd.read_csv(path_qualidade)
 
 # Exibir as primeiras linhas de cada tabela para revisão
-(leads_df.head(), vendas_df.head(), pesquisa_df.head())
+(leads_df.head(), vendas_df.head(), pesquisa_df.head(), qualidade_df.head())
 ")
 '''
 st.code(code_01, language="python")
