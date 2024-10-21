@@ -105,4 +105,7 @@ fig_term = px.bar(df_term, x='utmterm', y='conversion_rate',
                   labels={'conversion_rate':'Taxa de Conversão', 'utmterm':'Anúncio'})
 st.plotly_chart(fig_term)
 
+sf.line(5, "blue")
+
+
 
