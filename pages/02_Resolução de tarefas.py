@@ -160,7 +160,6 @@ total_leads = len(leads_df)
 total_compradores = leads_df['comprador'].sum()
 
 sf.text_left(f"Total de leads:{total_leads}", 5, "white")
-st.markdown(f"<span style='margin-right: 20px;'>Total de leads:</span> {total_leads}")
 sf.text_left(f"Total de compradores:{total_compradores}", 5, "white")
 sf.text_left(f"Conversão:\t\t\t{(conversion_rate*100):.2f}%", 5, "white")
 
@@ -187,5 +186,25 @@ conversion_by_source.sort_values(by='conversion_rate', ascending=False).head(), 
 '''
 
 st.code(code_03, language="python")
+
+# Analisar a taxa de conversão por canal (utmsource), público (utmmedium) e anúncio (utmterm)
+
+# Taxa de conversão por canal de origem (utmsource)
+conversion_by_source = leads_df.groupby('utmsource')['comprador'].agg(['count', 'sum', 'mean']).reset_index()
+conversion_by_source.columns = ['utmsource', 'total_leads', 'total_compradores', 'conversion_rate']
+
+# Taxa de conversão por público (utmmedium)
+conversion_by_medium = leads_df.groupby('utmmedium')['comprador'].agg(['count', 'sum', 'mean']).reset_index()
+conversion_by_medium.columns = ['utmmedium', 'total_leads', 'total_compradores', 'conversion_rate']
+
+# Taxa de conversão por anúncio (utmterm)
+conversion_by_term = leads_df.groupby('utmterm')['comprador'].agg(['count', 'sum', 'mean']).reset_index()
+conversion_by_term.columns = ['utmterm', 'total_leads', 'total_compradores', 'conversion_rate']
+
+st.write(conversion_by_source.sort_values(by='conversion_rate', ascending=False).head())
+
+st.write(conversion_by_medium.sort_values(by='conversion_rate', ascending=False).head())
+
+st.write(conversion_by_term.sort_values(by='conversion_rate', ascending=False).head())
 
 
