@@ -47,7 +47,7 @@ fig = go.Figure(go.Funnel(
 st.plotly_chart(fig)
 
 # Exibindo a taxa de conversão calculada
-sf.center_text(f"Taxa de Conversão: {round(conversao, 2)}%", 4, "white")
+sf.center_text(f"Taxa de Conversão: {round(conversao, 2)}%", 3, "white")
 st.subheader("")
 
 # Dados de Conversão por Canal de Origem (utmsource)
@@ -82,24 +82,24 @@ df_term = pd.DataFrame(data_term)
 sf.line(5, "blue")
 
 # Título no Streamlit
-sf.center_text('Análise de Conversão por Canal, Público e Anúncio', 4, "white")
+sf.center_text('Análise de Conversão por Canal, Público e Anúncio', 2, "white")
 
 # Gráfico 1 - Conversão por Canal de Origem (utmsource)
-sf.center_text('Conversão por Canal de Origem (utmsource)', 4, "yellow")
+sf.center_text('Conversão por Canal de Origem (utmsource)', 3, "yellow")
 fig_source = px.bar(df_source, x='utmsource', y='conversion_rate', 
                     text='conversion_rate', title="Taxa de Conversão por Canal de Origem",
                     labels={'conversion_rate':'Taxa de Conversão', 'utmsource':'Canal de Origem'})
 st.plotly_chart(fig_source)
 
 # Gráfico 2 - Conversão por Público (utmmedium)
-sf.center_text('Conversão por Público (utmmedium)', 4, "yellow")
+sf.center_text('Conversão por Público (utmmedium)', 3, "yellow")
 fig_medium = px.bar(df_medium, x='utmmedium', y='conversion_rate', 
                     text='conversion_rate', title="Taxa de Conversão por Público",
                     labels={'conversion_rate':'Taxa de Conversão', 'utmmedium':'Público'})
 st.plotly_chart(fig_medium)
 
 # Gráfico 3 - Conversão por Anúncio (utmterm)
-sf.center_text('Conversão por Anúncio (utmterm)', 4, "yellow")
+sf.center_text('Conversão por Anúncio (utmterm)', 3, "yellow")
 fig_term = px.bar(df_term, x='utmterm', y='conversion_rate', 
                   text='conversion_rate', title="Taxa de Conversão por Anúncio",
                   labels={'conversion_rate':'Taxa de Conversão', 'utmterm':'Anúncio'})
