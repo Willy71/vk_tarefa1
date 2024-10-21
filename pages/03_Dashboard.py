@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 st.set_page_config(
-    page_title="VK Digital - Tareffa 1",
+    page_title="VK Digital - Dashboard",
     page_icon="🌌",
     layout="wide"
 )
