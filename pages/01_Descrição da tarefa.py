@@ -5,12 +5,17 @@ sf.text_left("Nossa ideia é te inserir num ambiente prático que você viverá 
 
 st.text("")
 
+
 sf.text_left("Analisaremos:", 4, "white")
-sf.text_left("    - Se sua análise de fato se transformou em insights úteis para o lançamento", 4, "white")
-sf.text_left("    - Quanto as conclusões geradas dos dados estavam corretas", 4, "white")
-sf.text_left("    - Quanto capricho visual e organizacional você trouxe", 4, "white")
-sf.text_left("    - Quão bem você argumentou sobre os pontos que trouxe", 4, "white")
-sf.text_left("    - Quão profundo e criativo você foi em sua análise", 4, "white")
+with st.container():
+  col01, col02 = st.columns([0.5,6]) 
+  with col01:
+    sf.text_left("- Se sua análise de fato se transformou em insights úteis para o lançamento", 5, 'lightgrey')
+    sf.text_left("- Quanto as conclusões geradas dos dados estavam corretas", 5, 'lightgrey')
+    sf.text_left("- Quanto capricho visual e organizacional você trouxe", 5, 'lightgrey')
+    sf.text_left("- Quão bem você argumentou sobre os pontos que trouxe", 5, 'lightgrey')
+    sf.text_left("- Quão profundo e criativo você foi em sua análise", 5, 'lightgrey')
+
 
 st.text("")
 
