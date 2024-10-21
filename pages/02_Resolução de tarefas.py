@@ -4,7 +4,7 @@ import st_format as sf
 
 sf.text_left("Para montar um estudo com base nos dados fornecidos, podemos estruturar a análise em três grandes etapas:", 4, "white")
 
-sf.text_left("Análise de Inscrição e Captação de Leads:", 4, "lighorange")
+sf.text_left("Análise de Inscrição e Captação de Leads:", 4, "orange")
 sf.text_left("Avaliação dos leads inscritos por meio da primeira tabela ('001_TabelaPesquisaUTMsn.csv'), com destaque para os canais de origem (source), tipo de tráfego (medium) e anúncios (term) que mais geraram leads.", 5, "lightgrey")
 
 sf.text_left("Análise de Conversão de Leads para Compradores:", 4, "white")
