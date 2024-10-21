@@ -47,7 +47,7 @@ fig = go.Figure(go.Funnel(
 st.plotly_chart(fig)
 
 # Exibindo a taxa de conversão calculada
-sf.center_text(f"Taxa de Conversão: {round(conversao, 2)}%", 3, "white")
+sf.center_text(f"Taxa de Conversão: {round(conversao, 2)}%", 3, "yellow")
 st.subheader("")
 
 # Dados de Conversão por Canal de Origem (utmsource)
