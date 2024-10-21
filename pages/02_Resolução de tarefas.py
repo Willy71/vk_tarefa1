@@ -29,8 +29,7 @@ with st.container():
 st.text("")    
 sf.text_left("Vou iniciar carregando e analisando os dados das três tabelas.", 5,"lightgrey")
 st.text("")
-
-st.code("import pandas as pd
+code_01 = '''import pandas as pd
 
 # Carregar as três tabelas de dados
 path_leads = '/mnt/data/001_TabelaPesquisaUTMsn.csv'
@@ -44,4 +43,6 @@ pesquisa_df = pd.read_csv(path_pesquisa)
 
 # Exibir as primeiras linhas de cada tabela para revisão
 (leads_df.head(), vendas_df.head(), pesquisa_df.head())
-"), language="python")
+")
+'''
+st.code(code_01, language="python")
