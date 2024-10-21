@@ -59,7 +59,7 @@ vendas_df = pd.read_csv(path_vendas, index_col=None)
 pesquisa_df = pd.read_csv(path_pesquisa, index_col=None)
 qualidade_df = pd.read_csv(path_qualidade, index_col=None)
 
-st.write(leads_df.head())
+st.dataframe(leads_df.head(), hide_index=True)
 st.write(vendas_df.head())
 st.write(pesquisa_df.head())
 st.write(pesquisa_df.head())
