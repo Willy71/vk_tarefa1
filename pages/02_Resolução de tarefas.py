@@ -67,6 +67,23 @@ st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0
 st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
 st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
 st.dataframe(qualidade_df.head(), hide_index=True)
+st.text("")
+
+sf.text_left("Aqui está um resumo das três tabelas:", 4, "white")
+
+sf.text_left("Tabela de Leads (Inscritos):, 4, "yellow")
+with st.container():
+  col05, col06 = st.columns([0.5,6]) 
+  with col06:
+    sf.text_left("Colunas principais:, 4, "lightgrey")
+    with st.container():
+      col07, col08 = st.columns([0.5,6]) 
+      with col08:
+        sf.markdown("email: E-mail do lead.")
+        sf.markdown("utmsource: Canal de origem do lead (ex: 'facebookads').")
+        sf.markdown("utmmedium: Público do tráfego pago (ex: 'lookalike_1_compras_180D').")
+        sf.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
+
 
 
 
