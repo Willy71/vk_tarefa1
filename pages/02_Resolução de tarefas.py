@@ -1,5 +1,6 @@
 import streamlit as st
 import st_format as sf
+import pandas as pd
 
 
 sf.text_left("Para montar um estudo com base nos dados fornecidos, podemos estruturar a análise em três grandes etapas:", 4, "white")
@@ -48,3 +49,4 @@ qualidade_df = pd.read_csv(path_qualidade)
 ")
 '''
 st.code(code_01, language="python")
+st.write(code)
