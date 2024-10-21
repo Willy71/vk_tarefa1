@@ -148,7 +148,7 @@ total_compradores = leads_df['comprador'].sum()
 
 sf.text_left(f"Total de leads:{total_leads}", 5, "white")
 sf.text_left(f"Total de compradores:{total_compradores}", 5, "white")
-sf.text_left(f"Conversão: {conversion_rate}", 5, "white")
+sf.text_left(f"Conversão: {(conversion_rate*100):.2f}%", 5, "white")
 '''
 st.code(code_02, language="python")
 # Adicionando uma coluna de "comprador" à tabela de leads (1 para quem comprou, 0 para quem não comprou)
@@ -163,5 +163,28 @@ sf.text_left(f"Total de leads:{total_leads}", 5, "white")
 sf.text_left(f"Total de compradores:{total_compradores}", 5, "white")
 sf.text_left(f"Conversão: {(conversion_rate*100):.2f}%", 5, "white")
 
+st.text("")
+
+sf.text_left("Agora, vamos detalhar a análise por canal de origem (utmsource), público (utmmedium), e anúncio (utmterm) para identificar quais estratégias de marketing trouxeram mais compradores.", 4, "white")
+
+code_03 = '''
+# Analisar a taxa de conversão por canal (utmsource), público (utmmedium) e anúncio (utmterm)
+
+# Taxa de conversão por canal de origem (utmsource)
+conversion_by_source = leads_df.groupby('utmsource')['comprador'].agg(['count', 'sum', 'mean']).reset_index()
+conversion_by_source.columns = ['utmsource', 'total_leads', 'total_compradores', 'conversion_rate']
+
+# Taxa de conversão por público (utmmedium)
+conversion_by_medium = leads_df.groupby('utmmedium')['comprador'].agg(['count', 'sum', 'mean']).reset_index()
+conversion_by_medium.columns = ['utmmedium', 'total_leads', 'total_compradores', 'conversion_rate']
+
+# Taxa de conversão por anúncio (utmterm)
+conversion_by_term = leads_df.groupby('utmterm')['comprador'].agg(['count', 'sum', 'mean']).reset_index()
+conversion_by_term.columns = ['utmterm', 'total_leads', 'total_compradores', 'conversion_rate']
+
+conversion_by_source.sort_values(by='conversion_rate', ascending=False).head(), conversion_by_medium.sort_values(by='conversion_rate', ascending=False).head(), conversion_by_term.sort_values(by='conversion_rate', ascending=False).head()
+'''
+
+st.code(code_03, language="python")
 
 
