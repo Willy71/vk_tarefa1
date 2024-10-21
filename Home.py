@@ -19,6 +19,11 @@ reduce_space ="""
 # We load reduce_space
 st.html(reduce_space)
 
+st.header("")
+st.header("")
+st.header("")
+st.header("")
+
 sf.line(5, "blue")
 sf.center_text("Tarefa 1 para VK", 2, "lightgrey")
 sf.line(5, "blue")
