@@ -260,6 +260,19 @@ st.code(code_04, language="python")
 
 st.text("")
 
+# Cruzar os dados de pesquisa com os dados de leads (incluindo informação de compradores)
+# Vamos unir as tabelas de leads e pesquisa com base no e-mail
+
+leads_pesquisa_df = pd.merge(leads_df, pesquisa_df, on='email', how='left')
+
+# Verificar o perfil demográfico dos compradores
+compradores_df = leads_pesquisa_df[leads_pesquisa_df['comprador'] == 1]
+
+# Resumir perfil dos compradores (idade, renda, tempo de conhecimento)
+perfil_compradores = compradores_df[['idade', 'renda', 'tempo_me_conhece']].value_counts().reset_index(name='count')
+
+perfil_compradores.sort_values(by='count', ascending=False).head()
+
 st.write(perfil_compradores)
 
 
