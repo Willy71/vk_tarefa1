@@ -48,7 +48,7 @@ qualidade_df = pd.read_csv(path_qualidade)
 st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
 st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
 st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
-st.dataframe(pesquisa_df.head(), hide_index=True, column_config={qualidade_df.columns[0] : None})
+st.dataframe(qualidade_df.head(), hide_index=True)
 ")
 '''
 st.code(code_01, language="python")
@@ -66,7 +66,7 @@ qualidade_df = pd.read_csv(path_qualidade)
 st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
 st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
 st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
-st.dataframe(pesquisa_df.head(), hide_index=True, column_config={qualidade_df.columns[0] : None})
+st.dataframe(qualidade_df.head(), hide_index=True)
 
 
 
