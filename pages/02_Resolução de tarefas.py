@@ -14,9 +14,12 @@ sf.text_left("Perfil dos Leads e Compradores:", 4, "yellow")
 sf.text_left("Com base na pesquisa de persona (terceira tabela, '003_TabelaPesquisa.csv'), analisaremos o perfil dos leads que responderam a pesquisa, verificando idade, renda e há quanto tempo conhecem o expert. Cruzar esses dados com os compradores também pode fornecer insights sobre o perfil dos clientes que compraram.", 5, "lightgrey")
 
 sf.text_left("Passos:", 4, "yellow")
-sf.text_left("Carregar os dados das três tabelas.", 4, "white")
-sf.text_left("Explorar e cruzar os dados para gerar insights sobre:", 4, "white")
-sf.text_left("Distribuição de leads por canal e tráfego.", 4, "white")
-sf.text_left("Taxa de conversão por canal/anúncio.", 4, "white")
-sf.text_left("Perfis demográficos dos leads e compradores.", 4, "white")
-sf.text_left("Vou iniciar carregando e analisando os dados das três tabelas.", 4, "white")
+with st.container():
+  col01, col02 = st.columns([0.5,6]) 
+  with col02:
+    sf.text_left("Carregar os dados das três tabelas.", 4, "lightblue")
+    sf.text_left("Explorar e cruzar os dados para gerar insights sobre:", 4, "lightblue")
+    sf.text_left("Distribuição de leads por canal e tráfego.", 4, "lightblue")
+    sf.text_left("Taxa de conversão por canal/anúncio.", 4, "lightblue")
+    sf.text_left("Perfis demográficos dos leads e compradores.", 4, "lightblue")
+    sf.text_left("Vou iniciar carregando e analisando os dados das três tabelas.", 4, "lightblue")
