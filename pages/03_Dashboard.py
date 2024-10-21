@@ -154,7 +154,7 @@ fig_heatmap = go.Figure(data=go.Heatmap(
     y=heatmap_data.index,
     colorscale='Viridis'))
 
-sf.center_text('Heatmap de Compradores por Idade e Renda', 3, "yellow")
+sf.center_text('Mapa de calor de Compradores por Idade e Renda', 3, "yellow")
 
 fig_heatmap.update_layout(
     xaxis_nticks=36
