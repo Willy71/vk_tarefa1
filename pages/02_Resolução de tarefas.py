@@ -19,7 +19,11 @@ with st.container():
   with col02:
     st.markdown("Carregar os dados das três tabelas.")
     st.markdown("Explorar e cruzar os dados para gerar insights sobre:")
-    st.markdown("Distribuição de leads por canal e tráfego.")
-    st.markdown("Taxa de conversão por canal/anúncio.")
-    st.markdown("Perfis demográficos dos leads e compradores.")
-    st.markdown("Vou iniciar carregando e analisando os dados das três tabelas.")
+    with st.container():
+      col03, col04 = st.columns([0.5,6]) 
+      with col04:
+        st.markdown("Distribuição de leads por canal e tráfego.")
+        st.markdown("Taxa de conversão por canal/anúncio.")
+        st.markdown("Perfis demográficos dos leads e compradores.")
+    
+sf.text_left("Vou iniciar carregando e analisando os dados das três tabelas.", 5,"lightgrey")
