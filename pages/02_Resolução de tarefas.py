@@ -130,7 +130,25 @@ with st.container():
     st.markdown("Analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
 st.text("")
 
-sf.text_left("Vou realizar a análise de conversão de leads para compradores.", 4, "yellow")
+sf.text_left("Vou realizar a análise de conversão de leads para compradores.", 4, "white")
+
+code_02 = '''
+# Cruzar leads com compradores
+# Verificar quais emails da tabela de vendas aparecem na tabela de leads
+
+# Adicionando uma coluna de "comprador" à tabela de leads (1 para quem comprou, 0 para quem não comprou)
+leads_df['comprador'] = leads_df['email'].isin(vendas_df['email']).astype(int)
+
+# Ver quantos leads se converteram em compradores
+conversion_rate = leads_df['comprador'].mean()
+
+# Contar o número total de leads e compradores
+total_leads = len(leads_df)
+total_compradores = leads_df['comprador'].sum()
+
+total_leads, total_compradores, conversion_rate
+'''
+st.code(code_02, , language="python")
 
 
 
