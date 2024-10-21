@@ -18,7 +18,7 @@ sf.text_left("Passos:", 4, "yellow")
 with st.container():
   col01, col02 = st.columns([0.5,6]) 
   with col02:
-    st.markdown("Carregar os dados das três tabelas.")
+    st.markdown("Carregar os dados das quatro tabelas.")
     st.markdown("Explorar e cruzar os dados para gerar insights sobre:")
     with st.container():
       col03, col04 = st.columns([0.5,6]) 
@@ -28,11 +28,11 @@ with st.container():
         st.markdown("Perfis demográficos dos leads e compradores.")
 
 st.text("")    
-sf.text_left("Vou iniciar carregando e analisando os dados das três tabelas.", 5,"lightgrey")
+sf.text_left("Vou iniciar carregando e analisando os dados das quatro tabelas.", 5,"lightgrey")
 st.text("")
 code_01 = '''import pandas as pd
 
-# Carregar as três tabelas de dados
+# Carregar as quatro tabelas de dados
 path_leads = '/data/001_TabelaPesquisaUTMsn.csv'
 path_vendas = '/data/002_TabelaVendas.csv'
 path_pesquisa = '/data/003_TabelaPesquisa.csv'
@@ -69,7 +69,7 @@ st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.col
 st.dataframe(qualidade_df.head(), hide_index=True)
 st.text("")
 
-sf.text_left("Aqui está um resumo das três tabelas:", 4, "white")
+sf.text_left("Aqui está um resumo das quatro tabelas:", 4, "white")
 
 sf.text_left("1 - Tabela de Leads (Inscritos):", 4, "yellow")
 with st.container():
