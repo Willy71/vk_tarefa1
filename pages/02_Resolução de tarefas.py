@@ -77,7 +77,7 @@ with st.container():
   with col06:
     sf.text_left("Colunas principais:", 4, "lightgrey")
     with st.container():
-    col07, col08 = st.columns([0.5,6]) 
+      col07, col08 = st.columns([0.5,6]) 
       with col08:
         st.markdown("email: E-mail do lead.")
         st.markdown("utmsource: Canal de origem do lead (ex: 'facebookads').")
