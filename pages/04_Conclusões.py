@@ -89,5 +89,5 @@ sf.text_left("4. Segmentação Demográfica Refinada: Com a maioria dos comprado
 sf.text_left("5. Acompanhamento de Leads Novos e Antigos: Como os leads que conhecem o expert há menos de 1 mês e os que conhecem há mais de 2 anos convertem mais, campanhas segmentadas para esses dois grupos podem trazer melhores resultados. Ofertas especiais de boas-vindas para novos leads e conteúdos exclusivos para seguidores antigos podem aumentar o engajamento.", 5, "white") 
 st.text("")
 sf.line(5, "blue")
-sf.text_left("Conclusão final:", 3, "yellow") 
+sf.text_left("Conclusão final:", 3, "yellow")
 sf.text_left("A análise forneceu uma visão clara de quais canais, públicos e anúncios foram mais eficientes, além de informações valiosas sobre o perfil demográfico dos compradores. As otimizações sugeridas, como foco em anúncios de vídeo, melhor segmentação de públicos lookalike e campanhas específicas para leads novos e antigos, podem ajudar a melhorar os resultados nos próximos lançamentos.", 5, "white") 
