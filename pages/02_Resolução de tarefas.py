@@ -6,13 +6,13 @@ sf.text_left("Para montar um estudo com base nos dados fornecidos, podemos estru
 
 sf.text_left("Análise de Inscrição e Captação de Leads:", 4, "white")
 
-sf.text_left("Avaliação dos leads inscritos por meio da primeira tabela ("TabelaPesquisaUTMsn.csv"), com destaque para os canais de origem (source), tipo de tráfego (medium) e anúncios (term) que mais geraram leads.", 4, "white")
+sf.text_left("Avaliação dos leads inscritos por meio da primeira tabela ('001_TabelaPesquisaUTMsn.csv'), com destaque para os canais de origem (source), tipo de tráfego (medium) e anúncios (term) que mais geraram leads.", 4, "white")
 sf.text_left("Análise de Conversão de Leads para Compradores:", 4, "white")
 
-sf.text_left("Cruzamento dos dados de leads com os compradores da segunda tabela ("TabelaVendas.csv") para identificar taxas de conversão por canal, tráfego e anúncio. Isso pode indicar quais estratégias geraram mais vendas.", 4, "white")
+sf.text_left("Cruzamento dos dados de leads com os compradores da segunda tabela ('002_TabelaVendas.csv') para identificar taxas de conversão por canal, tráfego e anúncio. Isso pode indicar quais estratégias geraram mais vendas.", 4, "white")
 sf.text_left("Perfil dos Leads e Compradores:", 4, "white")
 
-sf.text_left("Com base na pesquisa de persona (terceira tabela, "TabelaPesquisa.csv"), analisaremos o perfil dos leads que responderam a pesquisa, verificando idade, renda e há quanto tempo conhecem o expert. Cruzar esses dados com os compradores também pode fornecer insights sobre o perfil dos clientes que compraram.", 4, "white")
+sf.text_left("Com base na pesquisa de persona (terceira tabela, '003_TabelaPesquisa.csv'), analisaremos o perfil dos leads que responderam a pesquisa, verificando idade, renda e há quanto tempo conhecem o expert. Cruzar esses dados com os compradores também pode fornecer insights sobre o perfil dos clientes que compraram.", 4, "white")
 sf.text_left("Passos:", 4, "white")
 sf.text_left("Carregar os dados das três tabelas.", 4, "white")
 sf.text_left("Explorar e cruzar os dados para gerar insights sobre:", 4, "white")
