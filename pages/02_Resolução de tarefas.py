@@ -205,4 +205,40 @@ st.write(conversion_by_source.sort_values(by='conversion_rate', ascending=False)
 st.write(conversion_by_medium.sort_values(by='conversion_rate', ascending=False).head())
 st.write(conversion_by_term.sort_values(by='conversion_rate', ascending=False).head())
 
+st.text("")
+sf.text_left("Aqui estão as principais descobertas relacionadas às conversões por canal, público e anúncio:", 4, "white")
 
+sf.text_left("Conversão por Canal de Origem (utmsource):", 4, "yellow")
+with st.container():
+  col19, col20 = st.columns([0.5,6]) 
+  with col20:
+    st.markdown("youtube: 1 lead com 100% de conversão.")
+    st.markdown("[DIRECT]: 13 leads, 1 comprador, taxa de conversão de 7,69%.")
+    st.markdown("manychat: 599 leads, 13 compradores, taxa de conversão de 2,17%.")
+    st.markdown("[BIO]: 323 leads, 7 compradores, taxa de conversão de 2,17%.")
+
+
+sf.text_left("Conversão por Público (utmmedium):", 4, "yellow")
+with st.container():
+  col21, col22 = st.columns([0.5,6]) 
+  with col22:
+    st.markdown("youtube: 1 lead com 100% de conversão.")
+    st.markdown("[DIRECT]: 13 leads, 1 comprador, taxa de conversão de 7,69%.")
+    st.markdown("1.00_Checkout_pagina_vendas_180D: 32 leads, 2 compradores, taxa de conversão de 6,25%.")
+    st.markdown("lookalike_3_compras_iOS_180D_Estaticos_AD4_7: 21 leads, 1 comprador, taxa de conversão de 4,76%.")
+
+
+sf.text_left("Conversão por Anúncio (utmterm):", 4, "yellow")
+with st.container():
+  col23, col24 = st.columns([0.5,6]) 
+  with col24:
+    st.markdown("youtube: 1 lead com 100% de conversão.")
+    st.markdown("VD_54: 6 leads, 1 comprador, taxa de conversão de 16,67%.")
+    st.markdown("email-convite-07-nt: 8 leads, 1 comprador, taxa de conversão de 12,5%.")
+
+line(5, "blue")
+sf.text_left("Próximos passos:", 4, "yellow")
+st.text("")
+sf.text_left("Agora, podemos cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações. Vamos a isso!", 6, "lightgrey")
+
+ 
