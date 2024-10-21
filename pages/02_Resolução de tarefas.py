@@ -60,8 +60,8 @@ pesquisa_df = pd.read_csv(path_pesquisa)
 qualidade_df = pd.read_csv(path_qualidade)
 
 # Obtener el nombre de la primera columna
-first_column = leads_df.columns[0]
-st.dataframe(leads_df.head(), hide_index=True, column_config={first_column : None})
+
+st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
 st.dataframe(vendas_df.head(), hide_index=True)
 st.dataframe(pesquisa_df.head(), hide_index=True)
 st.dataframe(pesquisa_df.head(), hide_index=True)
