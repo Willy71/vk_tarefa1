@@ -45,10 +45,14 @@ pesquisa_df = pd.read_csv(path_pesquisa)
 qualidade_df = pd.read_csv(path_qualidade)
 
 # Exibir as primeiras linhas de cada tabela para revisão
-leads_df.head(), vendas_df.head(), pesquisa_df.head(), qualidade_df.head())
+st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
+st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
+st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
+st.dataframe(pesquisa_df.head(), hide_index=True, column_config={qualidade_df.columns[0] : None})
 ")
 '''
 st.code(code_01, language="python")
+
 path_leads = 'data/001_TabelaPesquisaUTMsn.csv'
 path_vendas = 'data/002_TabelaVendas.csv'
 path_pesquisa = 'data/003_TabelaPesquisa.csv'
@@ -58,8 +62,6 @@ leads_df = pd.read_csv(path_leads)
 vendas_df = pd.read_csv(path_vendas)
 pesquisa_df = pd.read_csv(path_pesquisa)
 qualidade_df = pd.read_csv(path_qualidade)
-
-# Obtener el nombre de la primera columna
 
 st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
 st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
