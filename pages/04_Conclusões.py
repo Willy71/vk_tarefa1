@@ -80,7 +80,7 @@ sf.text_left("Vídeos que receberam mais curtidas destacam-se por característic
 sf.text_left("Por outro lado, vídeos com baixo engajamento, como aqueles em que pessoas falam diretamente para a câmera em ambientes comuns, podem não se destacar devido à falta de elementos visuais. Convites para eventos gratuitos e tópicos sérios, como doenças, também tiveram baixo desempenho, indicando a necessidade de otimização na abordagem.", 5, "white") 
 sf.text_left("O formato de vídeo é o mais popular, com vídeos dinâmicos, dicas práticas e cenários bem cuidados mostrando maior apelo. Além disso, o uso de filtros engraçados e diálogos divertidos aumenta o engajamento, sugerindo que um tom leve e divertido ressoa bem com o público.", 5, "white")
 st.text("")
-sf.text_left("Conclusões e recomendações:, 4, "yellow") 
+sf.text_left("Conclusões e recomendações:", 4, "yellow") 
 sf.text_left("1. Vídeos ao ar livre e com movimento: Apostar mais em vídeos dinâmicos, com ambientes externos, paisagens e atividades, pode melhorar o engajamento.", 5, "white")
 sf.text_left("2. Cenários visualmente agradáveis: O uso de ambientes com boa iluminação e elementos naturais (como plantas) deve ser explorado, pois o visual impacta diretamente no engajamento.", 5, "white")
 sf.text_left("3. Dicas práticas e conteúdos educativos: Vídeos que oferecem valor imediato, como dicas e orientações práticas, tendem a gerar mais curtidas. Estratégias de conteúdo baseadas em resolver problemas específicos podem ser altamente eficazes.", 5, "white")
