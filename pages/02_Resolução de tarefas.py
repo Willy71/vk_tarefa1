@@ -255,4 +255,4 @@ perfil_compradores = compradores_df[['idade', 'renda', 'tempo_me_conhece']].valu
 
 perfil_compradores.sort_values(by='count', ascending=False).head()
 '''
-st.code(code_04, , language="python")
+st.code(code_04, language="python")
