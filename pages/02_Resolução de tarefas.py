@@ -25,5 +25,6 @@ with st.container():
         st.markdown("Distribuição de leads por canal e tráfego.")
         st.markdown("Taxa de conversão por canal/anúncio.")
         st.markdown("Perfis demográficos dos leads e compradores.")
-    
+
+st.text("")    
 sf.text_left("Vou iniciar carregando e analisando os dados das três tabelas.", 5,"lightgrey")
