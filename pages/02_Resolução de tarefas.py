@@ -260,6 +260,6 @@ st.code(code_04, language="python")
 
 st.text("")
 
-st.write(perfil_compradores.sort_values(by='count', ascending=False).head())
+st.write(perfil_compradores)
 
 
