@@ -17,7 +17,7 @@ sf.text_left("Passos:", 4, "yellow")
 with st.container():
   col01, col02 = st.columns([0.5,6]) 
   with col02:
-    st.text("Carregar os dados das três tabelas.")
+    st.markdown("Carregar os dados das três tabelas.")
     st.text("Explorar e cruzar os dados para gerar insights sobre:")
     st.text("Distribuição de leads por canal e tráfego.")
     st.text("Taxa de conversão por canal/anúncio.")
