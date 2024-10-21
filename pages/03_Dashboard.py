@@ -45,5 +45,5 @@ fig = go.Figure(go.Funnel(
 st.plotly_chart(fig)
 
 # Exibindo a taxa de conversão calculada
-sf.text_left(f"Taxa de Conversão: {round(conversao, 2)}%", 4, "white")
+sf.center_text(f"Taxa de Conversão: {round(conversao, 2)}%", 4, "white")
 
