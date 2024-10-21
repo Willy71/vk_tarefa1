@@ -71,7 +71,7 @@ st.text("")
 
 sf.text_left("Aqui está um resumo das três tabelas:", 4, "white")
 
-sf.text_left("Tabela de Leads (Inscritos):", 4, "yellow")
+sf.text_left("1 - Tabela de Leads (Inscritos):", 4, "yellow")
 with st.container():
   col05, col06 = st.columns([0.5,6]) 
   with col06:
@@ -83,6 +83,51 @@ with st.container():
         st.markdown("utmsource: Canal de origem do lead (ex: 'facebookads').")
         st.markdown("utmmedium: Público do tráfego pago (ex: 'lookalike_1_compras_180D').")
         st.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
+
+sf.text_left("Tabela de Vendas (Compradores):", 4, "yellow")
+with st.container():
+  col09, col10 = st.columns([0.5,6]) 
+  with col10:
+    sf.text_left("Coluna principal:", 4, "lightgrey")
+    with st.container():
+      col11, col12 = st.columns([0.5,6]) 
+      with col12:
+        st.markdown("email: E-mail do comprador.")
+
+
+
+sf.text_left("Tabela de Pesquisa (Perfil de Leads):", 4, "yellow")
+with st.container():
+  col13, col14 = st.columns([0.5,6]) 
+  with col14:
+    sf.text_left("Colunas principais:", 4, "lightgrey")
+    with st.container():
+      col15, col16 = st.columns([0.5,6]) 
+      with col16:
+        st.markdown("email: E-mail do lead que respondeu a pesquisa.")
+        st.markdown("idade: Faixa etária do lead.")
+        st.markdown("renda: Faixa de renda do lead.")
+        st.markdown("tempo_me_conhece: Tempo que o lead conhece o expert.")
+
+sf.text_left("Tabela de Qualidade:", 4, "yellow")
+with st.container():
+  col13, col14 = st.columns([0.5,6]) 
+  with col14:
+    sf.text_left("Colunas principais:", 4, "lightgrey")
+    with st.container():
+      col15, col16 = st.columns([0.5,6]) 
+      with col16:
+        st.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
+        st.markdown("instagram_permalink_url: Anúncio de instagram")
+
+
+sf.text_left("Próximos passos:", 4, "yellow")
+ with st.container():
+      col17, col18 = st.columns([0.5,6]) 
+      with col18:
+        st.markdown("Identificar quais leads da tabela de inscritos (leads_df) realizaram compras, cruzando com a tabela de vendas (vendas_df).")
+        st.markdown("Analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
+        st.markdown("Vou realizar a análise de conversão de leads para compradores.")
 
 
 
