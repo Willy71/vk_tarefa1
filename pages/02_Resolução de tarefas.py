@@ -148,7 +148,7 @@ total_compradores = leads_df['comprador'].sum()
 
 total_leads, total_compradores, conversion_rate
 '''
-st.code(code_02, , language="python")
+st.code(code_02, language="python")
 
 
 
