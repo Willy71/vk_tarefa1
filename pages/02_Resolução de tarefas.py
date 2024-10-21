@@ -236,7 +236,7 @@ with st.container():
     st.markdown("VD_54: 6 leads, 1 comprador, taxa de conversão de 16,67%.")
     st.markdown("email-convite-07-nt: 8 leads, 1 comprador, taxa de conversão de 12,5%.")
 
-line(5, "blue")
+sf.line(5, "blue")
 sf.text_left("Próximos passos:", 4, "yellow")
 st.text("")
 sf.text_left("Agora, podemos cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações. Vamos a isso!", 6, "lightgrey")
