@@ -3,7 +3,7 @@ import st_format as sf
 
 
 st.set_page_config(
-    page_title="VK Digital - Tareffa 1",
+    page_title="VK Digital - Conclusões",
     page_icon="🌌",
     layout="wide"
 )
