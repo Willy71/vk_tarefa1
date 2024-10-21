@@ -241,8 +241,8 @@ sf.text_left("Próximos passos:", 4, "yellow")
 st.text("")
 sf.text_left("Agora, podemos cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações. Vamos a isso!", 6, "lightgrey")
 
- code_04 = '''
- # Cruzar os dados de pesquisa com os dados de leads (incluindo informação de compradores)
+code_04 = '''
+# Cruzar os dados de pesquisa com os dados de leads (incluindo informação de compradores)
 # Vamos unir as tabelas de leads e pesquisa com base no e-mail
 
 leads_pesquisa_df = pd.merge(leads_df, pesquisa_df, on='email', how='left')
