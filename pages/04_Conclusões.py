@@ -79,7 +79,7 @@ st.markdown("1. **Foco em Canais com Maior Conversão**: Apesar de o YouTube ter
    
 st.markdown("2. **Explorar Públicos Lookalike com Melhor Segmentação**: O público de remarketing teve uma excelente conversão. No entanto, os públicos lookalike não tiveram o mesmo desempenho. É recomendado fazer ajustes na criação de públicos similares, talvez utilizando dados mais refinados para criar melhores segmentações.")
 
-st.markdown("3. **Aprimoramento de Anúncios de Vídeo**: Anúncios em vídeo, como o "VD_54", tiveram uma excelente performance. A criação de novos anúncios em vídeo, com base nos insights da análise qualitativa dos anúncios, pode melhorar a taxa de conversão.")
+st.markdown("3. **Aprimoramento de Anúncios de Vídeo**: Anúncios em vídeo, como o 'VD_54', tiveram uma excelente performance. A criação de novos anúncios em vídeo, com base nos insights da análise qualitativa dos anúncios, pode melhorar a taxa de conversão.")
 
 st.markdown("4. **Segmentação Demográfica Refinada**: Com a maioria dos compradores entre 31 e 55 anos, com renda baixa a média, vale a pena criar campanhas de email marketing, webinars ou ofertas especiais focadas nesse grupo, com conteúdo e preços que atendam às suas necessidades.")
 
