@@ -159,8 +159,11 @@ conversion_rate = leads_df['comprador'].mean()
 total_leads = len(leads_df)
 total_compradores = leads_df['comprador'].sum()
 
-st.write(total_leads)
-st.write(total_compradores)
-st.write(conversion_rate)
+sf.text_left("Total de leads", 5, "white")
+st.markdown(total_leads)
+sf.text_left("Total de compradores", 5, "white")
+st.markdown(total_compradores)
+sf.text_left("Conversão", 5, "white")
+st.markdown(conversion_rate)
 
 
