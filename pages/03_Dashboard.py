@@ -107,5 +107,61 @@ st.plotly_chart(fig_term)
 
 sf.line(5, "blue")
 
+# Dados
+data = {
+    'idade': ['56 a 60 anos', '41 a 45 anos', '46 a 50 anos', 'acima de 60', '51 a 55 anos', '51 a 55 anos', 
+              '41 a 45 anos', '36 a 40 anos', '36 a 40 anos', '31 a 35 anos', '41 a 45 anos', '31 a 35 anos', 
+              '31 a 35 anos', '31 a 35 anos', '31 a 35 anos', '46 a 50 anos', '41 a 45 anos', '41 a 45 anos', 
+              '41 a 45 anos', '51 a 55 anos', '46 a 50 anos', '46 a 50 anos', '46 a 50 anos', '51 a 55 anos', 
+              '51 a 55 anos', '56 a 60 anos', '56 a 60 anos', '56 a 60 anos', 'acima de 60', 'acima de 60'],
+    'renda': ['Até 1.500 reais', 'De 1.500 a 3.000 reais', 'Até 1.500 reais', 'De 3.000 reais a 5.000 reais',
+              'Mais de 5.000 reais', 'De 3.000 reais a 5.000 reais', 'Até 1.500 reais', 'Até 1.500 reais', 
+              'Até 1.500 reais', 'Mais de 5.000 reais', 'Até 1.500 reais', 'De 3.000 reais a 5.000 reais', 
+              'Até 1.500 reais', 'Até 1.500 reais', 'De 1.500 a 3.000 reais', 'Até 1.500 reais', 'Mais de 5.000 reais', 
+              'De 3.000 reais a 5.000 reais', 'Até 1.500 reais', 'Até 1.500 reais', 'De 1.500 a 3.000 reais', 
+              'Mais de 5.000 reais', 'De 3.000 reais a 5.000 reais', 'De 3.000 reais a 5.000 reais', 'De 1.500 a 3.000 reais', 
+              'Até 1.500 reais', 'De 1.500 a 3.000 reais', 'De 3.000 reais a 5.000 reais', 'Mais de 5.000 reais', 
+              'Mais de 5.000 reais'],
+    'tempo_me_conhece': ['Menos de 1 mês', 'Mais de 2 anos', 'Menos de 1 mês', 'Menos de 1 mês', 'Menos de 1 mês', 
+                         'De 6 meses a 1 ano', 'Mais de 2 anos', 'Mais de 2 anos', 'De 2 a 6 meses', 'Menos de 1 mês',
+                         'De 1 a 2 anos', 'De 2 a 6 meses', 'De 6 meses a 1 ano', 'Menos de 1 mês', 'Menos de 1 mês', 
+                         'De 6 meses a 1 ano', 'Menos de 1 mês', 'De 1 a 2 anos', 'Menos de 1 mês', 'De 2 a 6 meses', 
+                         'De 2 a 6 meses', 'De 1 a 2 anos', 'De 1 a 2 anos', 'Mais de 2 anos', 'Menos de 1 mês', 
+                         'De 1 a 2 anos', 'Menos de 1 mês', 'Menos de 1 mês', 'Mais de 2 anos', 'Menos de 1 mês'],
+    'count': [5, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+}
+
+df = pd.DataFrame(data)
+
+# Gráfico de Barras Empilhadas (Idade x Renda x Tempo)
+fig = px.bar(df, x="idade", y="count", color="renda", barmode="stack", 
+             hover_data=["tempo_me_conhece"],
+             labels={"count": "Número de Compradores", "idade": "Faixa Etária", "renda": "Renda"},
+             title="Distribuição de Compradores por Idade, Renda e Tempo que Conhecem o Expert")
+
+# Exibir o gráfico no Streamlit
+st.plotly_chart(fig)
+
+sf.line(5, "blue")
+
+# Tabela pivô para o Heatmap
+heatmap_data = df.pivot_table(index="idade", columns="renda", values="count", aggfunc="sum", fill_value=0)
+
+# Criar o heatmap
+fig_heatmap = go.Figure(data=go.Heatmap(
+    z=heatmap_data.values,
+    x=heatmap_data.columns,
+    y=heatmap_data.index,
+    colorscale='Viridis'))
+
+fig_heatmap.update_layout(
+    title='Heatmap de Compradores por Idade e Renda',
+    xaxis_nticks=36
+)
+
+# Exibir no Streamlit
+st.plotly_chart(fig_heatmap)
+
+
 
 
