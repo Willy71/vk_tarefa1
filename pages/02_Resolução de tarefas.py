@@ -78,11 +78,11 @@ with st.container():
     sf.text_left("Colunas principais:", 4, "lightgrey")
 with st.container():
 col07, col08 = st.columns([0.5,6]) 
-with col08:
-  st.markdown("email: E-mail do lead.")
-  st.markdown("utmsource: Canal de origem do lead (ex: 'facebookads').")
-  st.markdown("utmmedium: Público do tráfego pago (ex: 'lookalike_1_compras_180D').")
-  st.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
+  with col08:
+    st.markdown("email: E-mail do lead.")
+    st.markdown("utmsource: Canal de origem do lead (ex: 'facebookads').")
+    st.markdown("utmmedium: Público do tráfego pago (ex: 'lookalike_1_compras_180D').")
+    st.markdown("utmterm: Anúncio específico que trouxe o lead (ex: 'AD17').")
 
 
 
