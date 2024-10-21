@@ -122,12 +122,12 @@ with st.container():
 
 
 sf.text_left("Próximos passos:", 4, "yellow")
- with st.container():
-    col17, col18 = st.columns([0.5,6]) 
-    with col18:
-      st.markdown("Identificar quais leads da tabela de inscritos (leads_df) realizaram compras, cruzando com a tabela de vendas (vendas_df).")
-      st.markdown("Analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
-      st.markdown("Vou realizar a análise de conversão de leads para compradores.")
+with st.container():
+  col17, col18 = st.columns([0.5,6]) 
+  with col18:
+    st.markdown("Identificar quais leads da tabela de inscritos (leads_df) realizaram compras, cruzando com a tabela de vendas (vendas_df).")
+    st.markdown("Analisar o perfil dos leads (pesquisa_df) e verificar se há alguma correlação com as conversões.")
+    st.markdown("Vou realizar a análise de conversão de leads para compradores.")
 
 
 
