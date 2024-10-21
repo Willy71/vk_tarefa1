@@ -159,10 +159,9 @@ conversion_rate = leads_df['comprador'].mean()
 total_leads = len(leads_df)
 total_compradores = leads_df['comprador'].sum()
 
-sf.text_left(f"Total de leads:        {total_leads}", 5, "white")
-sf.text_left(f"Total de leads:{total_leads: >8}", 5, "white")
-sf.text_left(f"Total de compradores:        {total_compradores}", 5, "white")
-sf.text_left(f"Conversão:       {(conversion_rate*100):.2f}%", 5, "white")
+sf.text_left(f"Total de leads:\t{total_leads}", 5, "white")
+sf.text_left(f"Total de compradores:\t{total_compradores}", 5, "white")
+sf.text_left(f"Conversão:\t{(conversion_rate*100):.2f}%", 5, "white")
 
 st.text("")
 
