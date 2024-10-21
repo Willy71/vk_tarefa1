@@ -2,7 +2,7 @@ import streamlit as st
 import st_format as sf
 
 st.set_page_config(
-    page_title="Silvertech - Trabajo final",
+    page_title="VK Digital - Descrição das tarefas",
     page_icon="🌌",
     layout="wide"
 )
@@ -20,7 +20,7 @@ reduce_space ="""
 st.html(reduce_space)
 
 sf.line(5, "blue")
-sf.center_text("Descrição da tarefa", 3, "white")
+sf.center_text("Descrição das tarefas", 3, "white")
 sf.line(5, "blue")
 
 st.text("")
