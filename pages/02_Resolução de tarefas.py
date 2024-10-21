@@ -239,7 +239,7 @@ with st.container():
 sf.line(5, "blue")
 sf.text_left("Próximos passos:", 4, "yellow")
 st.text("")
-sf.text_left("Agora, podemos cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações. Vamos a isso!", 6, "lightgrey")
+sf.text_left("Agora, podemos cruzar os dados da pesquisa (idade, renda, tempo que conhecem o expert) com as conversões para entender melhor o perfil dos compradores e gerar possíveis otimizações. Vamos a isso!", 4, "lightgrey")
 
 code_04 = '''
 # Cruzar os dados de pesquisa com os dados de leads (incluindo informação de compradores)
