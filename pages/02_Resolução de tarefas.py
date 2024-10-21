@@ -146,10 +146,21 @@ conversion_rate = leads_df['comprador'].mean()
 total_leads = len(leads_df)
 total_compradores = leads_df['comprador'].sum()
 
-total_leads, total_compradores, conversion_rate
+st.write(total_leads)
+st.write(total_compradores)
+st.write(conversion_rate)
 '''
 st.code(code_02, language="python")
+# Adicionando uma coluna de "comprador" à tabela de leads (1 para quem comprou, 0 para quem não comprou)
+leads_df['comprador'] = leads_df['email'].isin(vendas_df['email']).astype(int)
+# Ver quantos leads se converteram em compradores
+conversion_rate = leads_df['comprador'].mean()
+# Contar o número total de leads e compradores
+total_leads = len(leads_df)
+total_compradores = leads_df['comprador'].sum()
 
-
+st.write(total_leads)
+st.write(total_compradores)
+st.write(conversion_rate)
 
 
