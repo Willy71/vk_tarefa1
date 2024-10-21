@@ -71,11 +71,11 @@ st.text("")
 
 sf.text_left("Aqui está um resumo das três tabelas:", 4, "white")
 
-sf.text_left("Tabela de Leads (Inscritos):, 4, "yellow")
+sf.text_left("Tabela de Leads (Inscritos):", 4, "yellow")
 with st.container():
   col05, col06 = st.columns([0.5,6]) 
   with col06:
-    sf.text_left("Colunas principais:, 4, "lightgrey")
+    sf.text_left("Colunas principais:", 4, "lightgrey")
     with st.container():
       col07, col08 = st.columns([0.5,6]) 
       with col08:
