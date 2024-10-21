@@ -59,7 +59,7 @@ vendas_df = pd.read_csv(path_vendas, index_col=None)
 pesquisa_df = pd.read_csv(path_pesquisa, index_col=None)
 qualidade_df = pd.read_csv(path_qualidade, index_col=None)
 
-st.dataframe(leads_df.head(), hide_index=True, use_container_width= True)
+st.dataframe(leads_df.head(), hide_index=True, column_order = ("Unnamed:0", "email","utmsource","utmterm", "utmmedium")
 st.dataframe(vendas_df.head(), hide_index=True)
 st.dataframe(pesquisa_df.head(), hide_index=True)
 st.dataframe(pesquisa_df.head(), hide_index=True)
