@@ -2,7 +2,7 @@ import streamlit as st
 import st_format as sf
 
 st.set_page_config(
-    page_title="Silvertech - Trabajo final",
+    page_title="VK Digital - Trabalho 1",
     page_icon="🌌",
     layout="wide"
 )
