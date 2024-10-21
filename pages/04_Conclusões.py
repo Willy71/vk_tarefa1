@@ -24,7 +24,7 @@ sf.line(5, "blue")
 sf.center_text("Conclusões", 1, "white")  
 sf.line(5, "blue")
 
-sf.text_left("1. **Análise de Conversão por Canal de Origem (UTM Source)", 4, "yellow") 
+sf.text_left("1. Análise de Conversão por Canal de Origem (UTM Source)", 4, "yellow") 
 st.text("")
 sf.text_left("Ao analisar os dados de conversão por canal de origem (UTM Source), observamos:", 5, "white") 
 st.text("")
@@ -36,9 +36,9 @@ sf.text_left("-Conclusão:", 4, "yellow")
 sf.text_left("Apesar de a taxa de conversão do YouTube ser a mais alta, o volume de leads é extremamente pequeno. Manychat, com uma maior quantidade de leads, se destacou com uma conversão acima da média. Esse é um canal que poderia receber mais investimento e melhorias em futuras campanhas, possivelmente ajustando a segmentação ou o conteúdo para aumentar ainda mais as conversões.", 5, "white") 
 sf.line(5, "blue")
 
-sf.text_left("2. **Análise de Conversão por Público (UTM Medium)", 4, "yellow") 
+sf.text_left("2. Análise de Conversão por Público (UTM Medium)", 4, "yellow") 
 st.text("")
-sf.text_left("2 - Ao analisar o público (Medium), observamos que:", 5, "white")  
+sf.text_left("Ao analisar o público (Medium), observamos que:", 5, "white")  
 st.text("")
 sf.text_left("- O público vindo do YouTube também obteve uma conversão de 100%, com apenas 1 lead.", 5, "white") 
 sf.text_left("- O público '1.00_Checkout_pagina_vendas_180D' teve 32 leads e 2 compradores, resultando em uma conversão de 6.25%, que é significativamente alta em relação aos outros canais.", 5, "white") 
@@ -78,20 +78,15 @@ sf.text_left("O quarto arquivo traz links para os anúncios usados na campanha. 
 st.text("")
 sf.text_left("-Conclusão:", 4, "yellow") 
 sf.text_left("A análise qualitativa pode focar em identificar padrões criativos, como cores, tom de voz, ou elementos visuais que geraram mais engajamento, e replicar essas boas práticas nos futuros anúncios. Além disso, ajustar anúncios que não geraram bons resultados pode melhorar o ROI.", 5, "white") 
-
 sf.line(5, "blue")
 
-sf.text_left("## Insights e Otimizações para Próximos Lançamentos:", 4, "white") 
+sf.text_left("Insights e Otimizações para Próximos Lançamentos:", 4, "yellow") 
 
-st.markdown("1. **Foco em Canais com Maior Conversão**: Apesar de o YouTube ter alta conversão, a base de leads é pequena. **Manychat** foi o canal com mais volume e uma conversão considerável. Vale a pena investir mais nesse canal e otimizar campanhas de remarketing para aumentar as conversões.")
-   
-st.markdown("2. **Explorar Públicos Lookalike com Melhor Segmentação**: O público de remarketing teve uma excelente conversão. No entanto, os públicos lookalike não tiveram o mesmo desempenho. É recomendado fazer ajustes na criação de públicos similares, talvez utilizando dados mais refinados para criar melhores segmentações.")
-
-st.markdown("3. **Aprimoramento de Anúncios de Vídeo**: Anúncios em vídeo, como o 'VD_54', tiveram uma excelente performance. A criação de novos anúncios em vídeo, com base nos insights da análise qualitativa dos anúncios, pode melhorar a taxa de conversão.")
-
-st.markdown("4. **Segmentação Demográfica Refinada**: Com a maioria dos compradores entre 31 e 55 anos, com renda baixa a média, vale a pena criar campanhas de email marketing, webinars ou ofertas especiais focadas nesse grupo, com conteúdo e preços que atendam às suas necessidades.")
-
-st.markdown("5. **Acompanhamento de Leads Novos e Antigos**: Como os leads que conhecem o expert há menos de 1 mês e os que conhecem há mais de 2 anos convertem mais, campanhas segmentadas para esses dois grupos podem trazer melhores resultados. Ofertas especiais de boas-vindas para novos leads e conteúdos exclusivos para seguidores antigos podem aumentar o engajamento.")
-
-sf.text_left("### Conclusão Final:", 4, "white") 
-sf.text_left("A análise forneceu uma visão clara de quais canais, públicos e anúncios foram mais eficientes, além de informações valiosas sobre o perfil demográfico dos compradores. As otimizações sugeridas, como foco em anúncios de vídeo, melhor segmentação de públicos lookalike e campanhas específicas para leads novos e antigos, podem ajudar a melhorar os resultados nos próximos lançamentos.", 4, "white") 
+sf.text_left("1. Foco em Canais com Maior Conversão: Apesar de o YouTube ter alta conversão, a base de leads é pequena. **Manychat** foi o canal com mais volume e uma conversão considerável. Vale a pena investir mais nesse canal e otimizar campanhas de remarketing para aumentar as conversões.", 5, "white") 
+sf.text_left("2. Explorar Públicos Lookalike com Melhor Segmentação: O público de remarketing teve uma excelente conversão. No entanto, os públicos lookalike não tiveram o mesmo desempenho. É recomendado fazer ajustes na criação de públicos similares, talvez utilizando dados mais refinados para criar melhores segmentações.", 5, "white") 
+sf.text_left("3. Aprimoramento de Anúncios de Vídeo: Anúncios em vídeo, como o 'VD_54', tiveram uma excelente performance. A criação de novos anúncios em vídeo, com base nos insights da análise qualitativa dos anúncios, pode melhorar a taxa de conversão.", 5, "white") 
+sf.text_left("4. Segmentação Demográfica Refinada: Com a maioria dos compradores entre 31 e 55 anos, com renda baixa a média, vale a pena criar campanhas de email marketing, webinars ou ofertas especiais focadas nesse grupo, com conteúdo e preços que atendam às suas necessidades.", 5, "white") 
+sf.text_left("5. Acompanhamento de Leads Novos e Antigos: Como os leads que conhecem o expert há menos de 1 mês e os que conhecem há mais de 2 anos convertem mais, campanhas segmentadas para esses dois grupos podem trazer melhores resultados. Ofertas especiais de boas-vindas para novos leads e conteúdos exclusivos para seguidores antigos podem aumentar o engajamento.", 5, "white") 
+st.text("")
+sf.text_left("-Conclusão final:", 4, "yellow") 
+sf.text_left("A análise forneceu uma visão clara de quais canais, públicos e anúncios foram mais eficientes, além de informações valiosas sobre o perfil demográfico dos compradores. As otimizações sugeridas, como foco em anúncios de vídeo, melhor segmentação de públicos lookalike e campanhas específicas para leads novos e antigos, podem ajudar a melhorar os resultados nos próximos lançamentos.", 5, "white") 
