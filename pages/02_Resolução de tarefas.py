@@ -18,8 +18,8 @@ with st.container():
   col01, col02 = st.columns([0.5,6]) 
   with col02:
     st.markdown("Carregar os dados das três tabelas.")
-    st.text("Explorar e cruzar os dados para gerar insights sobre:")
-    st.text("Distribuição de leads por canal e tráfego.")
-    st.text("Taxa de conversão por canal/anúncio.")
-    st.text("Perfis demográficos dos leads e compradores.")
-    st.text("Vou iniciar carregando e analisando os dados das três tabelas.")
+    st.markdown("Explorar e cruzar os dados para gerar insights sobre:")
+    st.markdown("Distribuição de leads por canal e tráfego.")
+    st.markdown("Taxa de conversão por canal/anúncio.")
+    st.markdown("Perfis demográficos dos leads e compradores.")
+    st.markdown("Vou iniciar carregando e analisando os dados das três tabelas.")
