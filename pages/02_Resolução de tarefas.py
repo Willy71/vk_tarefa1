@@ -54,15 +54,15 @@ path_vendas = 'data/002_TabelaVendas.csv'
 path_pesquisa = 'data/003_TabelaPesquisa.csv'
 path_qualidade = 'data/004_TabelaAdsLinks.csv'
 
-leads_df = pd.read_csv(path_leads, index_col=None)
-vendas_df = pd.read_csv(path_vendas, index_col=None)
-pesquisa_df = pd.read_csv(path_pesquisa, index_col=None)
-qualidade_df = pd.read_csv(path_qualidade, index_col=None)
+leads_df = pd.read_csv(path_leads)
+vendas_df = pd.read_csv(path_vendas)
+pesquisa_df = pd.read_csv(path_pesquisa)
+qualidade_df = pd.read_csv(path_qualidade)
 
-st.write(leads_df.head())
-st.write(vendas_df.head())
-st.write(pesquisa_df.head())
-st.write(pesquisa_df.head())
+st.write(leads_df.head(), index_col=None)
+st.write(vendas_df.head(), index_col=None)
+st.write(pesquisa_df.head(), index_col=None)
+st.write(pesquisa_df.head(), index_col=None)
 
 
 
