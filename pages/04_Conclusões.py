@@ -41,7 +41,7 @@ sf.text_left("**Conclusão**: Apesar de a taxa de conversão do YouTube ser a ma
 sf.text_left("Ao analisar o público (Medium), observamos que:", 4, "white") 
 
 st.markdown("- O público vindo do **YouTube** também obteve uma conversão de **100%**, com apenas 1 lead.")
-st.markdown("- O público **"1.00_Checkout_pagina_vendas_180D"** teve 32 leads e 2 compradores, resultando em uma conversão de **6.25%**, que é significativamente alta em relação aos outros canais.")
+st.markdown("- O público **1.00_Checkout_pagina_vendas_180D** teve 32 leads e 2 compradores, resultando em uma conversão de **6.25%**, que é significativamente alta em relação aos outros canais.")
 st.markdown("- Públicos **lookalike**, que são audiências similares, tiveram conversões menores, com taxas de **3.85%** e **4.76%**.")
 
 sf.text_left("**Conclusão**: Públicos de remarketing (como o público da página de vendas) apresentaram uma taxa de conversão bastante significativa. Campanhas futuras podem explorar mais o remarketing e melhorar a segmentação de públicos lookalike para aumentar a eficiência dessas campanhas.", 4, "white") 
