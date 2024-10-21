@@ -45,7 +45,7 @@ sf.text_left("- O público '1.00_Checkout_pagina_vendas_180D' teve 32 leads e 2 
 sf.text_left("- Públicos lookalike_1 e lookalike_3, que são audiências similares, tiveram conversões menores, com taxas de 3.85% e 4.76%.", 5, "white") 
 st.text("")
 sf.text_left("-Conclusão:", 4, "yellow")  
-sf.text_left("Públicos de remarketing (como o público da página de vendas) apresentaram uma taxa de conversão bastante significativa. Campanhas futuras podem explorar mais o remarketing e melhorar a segmentação de públicos lookalike para aumentar a eficiência dessas campanhas.", 5, "white") 
+sf.text_left("O público da página de vendas apresentaram uma taxa de conversão bastante significativa. Campanhas futuras podem explorar mais o remarketing e melhorar a segmentação de públicos lookalike para aumentar a eficiência dessas campanhas.", 5, "white") 
 sf.line(5, "blue")
 
 sf.text_left("3. Análise de Conversão por Anúncio (UTM Term)", 3, "yellow")  
