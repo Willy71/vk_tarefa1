@@ -93,7 +93,7 @@ sf.line(5, "blue")
 
 sf.text_left("Insights e Otimizações para Próximos Lançamentos:", 3, "yellow") 
 
-sf.text_left("1. Foco em Canais com Maior Conversão: Apesar de o YouTube ter alta conversão, a base de leads é pequena. **Manychat** foi o canal com mais volume e uma conversão considerável. Vale a pena investir mais nesse canal e otimizar campanhas de remarketing para aumentar as conversões.", 5, "white") 
+sf.text_left("1. Foco em Canais com Maior Conversão: Apesar de o YouTube ter alta conversão, a base de leads é pequena. Manychat foi o canal com mais volume e uma conversão considerável. Vale a pena investir mais nesse canal e otimizar campanhas de remarketing para aumentar as conversões.", 5, "white") 
 sf.text_left("2. Explorar Públicos Lookalike com Melhor Segmentação: O público de remarketing teve uma excelente conversão. No entanto, os públicos lookalike não tiveram o mesmo desempenho. É recomendado fazer ajustes na criação de públicos similares, talvez utilizando dados mais refinados para criar melhores segmentações.", 5, "white") 
 sf.text_left("3. Aprimoramento de Anúncios de Vídeo: Anúncios em vídeo, como o 'VD_54', tiveram uma excelente performance. A criação de novos anúncios em vídeo, com base nos insights da análise qualitativa dos anúncios, pode melhorar a taxa de conversão.", 5, "white") 
 sf.text_left("4. Segmentação Demográfica Refinada: Com a maioria dos compradores entre 31 e 55 anos, com renda baixa a média, vale a pena criar campanhas de email marketing, webinars ou ofertas especiais focadas nesse grupo, com conteúdo e preços que atendam às suas necessidades.", 5, "white") 
