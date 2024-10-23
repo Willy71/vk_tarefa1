@@ -46,11 +46,11 @@ with st.container():
         st.markdown("Perfis demográficos dos leads e compradores.")
 
 st.text("")    
-sf.text_left("Vou iniciar carregando e analisando os dados das quatro tabelas.", 5,"lightgrey")
+sf.text_left("Vou iniciar carregando e analisando os dados das três primeiras tabelas.", 5,"lightgrey")
 st.text("")
 code_01 = '''import pandas as pd
 
-# Carregar as quatro tabelas de dados
+# Carregar as três primeiras tabelas de dados
 path_leads = '/data/001_TabelaPesquisaUTMsn.csv'
 path_vendas = '/data/002_TabelaVendas.csv'
 path_pesquisa = '/data/003_TabelaPesquisa.csv'
@@ -66,7 +66,6 @@ qualidade_df = pd.read_csv(path_qualidade)
 st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
 st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
 st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
-st.dataframe(qualidade_df.head(), hide_index=True)
 ")
 '''
 st.code(code_01, language="python")
@@ -84,10 +83,10 @@ qualidade_df = pd.read_csv(path_qualidade)
 st.dataframe(leads_df.head(), hide_index=True, column_config={leads_df.columns[0] : None})
 st.dataframe(vendas_df.head(), hide_index=True, column_config={vendas_df.columns[0] : None})
 st.dataframe(pesquisa_df.head(), hide_index=True, column_config={pesquisa_df.columns[0] : None})
-st.dataframe(qualidade_df.head(), hide_index=True)
+#st.dataframe(qualidade_df.head(), hide_index=True)
 st.text("")
 
-sf.text_left("Aqui está um resumo das quatro tabelas:", 4, "white")
+sf.text_left("Aqui está um resumo das três primeiras tabelas:", 4, "white")
 
 sf.text_left("1 - Tabela de Leads (Inscritos):", 4, "yellow")
 with st.container():
