@@ -23,7 +23,7 @@ st.header("")
 st.header("")
 
 sf.line(5, "blue")
-sf.center_text("Tarefa 1 para VK", 2, "lightgrey")
+sf.center_text("Análise de BI e planejamento estratégico para lançamento de produtos digitais.", 2, "lightgrey")
 sf.line(5, "blue")
 
 
