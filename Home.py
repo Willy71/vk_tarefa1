@@ -21,7 +21,7 @@ st.html(reduce_space)
 
 st.header("")
 st.header("")
-#sf.center_picture("", 400)
+sf.center_picture("https://github.com/Willy71/vk_tarefa1/blob/main/picture/Marketing.png?raw=true", 400)
 
 #sf.line(5, "blue")
 #sf.center_text("Análise de BI e planejamento estratégico para lançamento de produtos digitais.", 2, "lightgrey")
